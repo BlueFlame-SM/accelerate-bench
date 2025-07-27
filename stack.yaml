@@ -1,0 +1,17 @@
+snapshot: lts-21.25
+
+packages:
+- .
+
+extra-deps:
+- ../accelerate/
+- ../accelerate-llvm/accelerate-llvm/
+- ../accelerate-llvm/accelerate-llvm-native/
+
+- OptDir-0.1.0
+- bytestring-encoding-0.1.2.0
+- MIP-0.2.0.0
+- monadLib-3.10.3
+
+- github: tomsmeding/llvm-pretty
+  commit: a253a7fc1c62f4825ffce6b2507eebc5dadff32c
