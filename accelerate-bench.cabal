@@ -23,25 +23,40 @@ source-repository head
   type: git
   location: https://github.com/githubuser/accelerate-bench
 
+flag memory-bench
+  manual:               True
+  default:              True
+  description:          Benchmark memory usage
+
 library
   exposed-modules:
-      Data.Array.Accelerate.Bench
-      Data.Array.Accelerate.Bench.Cocktail
+      Bench
+      Bench.Cocktail
+      Bench.MG
+      Bench.NBody
+      Bench.Quickhull
   other-modules:
-      Paths_accelerate_bench
-  autogen-modules:
-      Paths_accelerate_bench
+      Bench.NBody.Input
+      Bench.NBody.NBody
+      Bench.NBody.Physics
+      Bench.Quickhull.Quickhull
   hs-source-dirs:
       src
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  ghc-options: -Wall
   build-depends:
       accelerate
     , accelerate-llvm
     , accelerate-llvm-native
     , base >=4.7 && <5
+    , bytestring
     , criterion
     , deepseq
+    , mtl
   default-language: Haskell2010
+
+  if flag(memory-bench)
+    cpp-options:
+      -DACCELERATE_MEMORY_BENCH
 
 executable accelerate-bench-exe
   main-is: Main.hs
@@ -51,27 +66,7 @@ executable accelerate-bench-exe
       Paths_accelerate_bench
   hs-source-dirs:
       app
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      accelerate
-    , accelerate-bench
-    , accelerate-llvm
-    , accelerate-llvm-native
-    , base >=4.7 && <5
-    , criterion
-    , deepseq
-  default-language: Haskell2010
-
-test-suite accelerate-bench-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
-  other-modules:
-      Paths_accelerate_bench
-  autogen-modules:
-      Paths_accelerate_bench
-  hs-source-dirs:
-      test
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -Wall
   build-depends:
       accelerate
     , accelerate-bench

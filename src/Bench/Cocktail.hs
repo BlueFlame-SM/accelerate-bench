@@ -1,18 +1,14 @@
-{-# LANGUAGE ViewPatterns #-}
 {-# LANGUAGE RebindableSyntax #-}
 {-# LANGUAGE ScopedTypeVariables #-}
-{-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE FlexibleContexts #-}
-module Data.Array.Accelerate.Bench.Cocktail where
+module Bench.Cocktail ( cocktailBench ) where
 
 import qualified Prelude as P
 import Data.Array.Accelerate
-import Data.Array.Accelerate.Unsafe
-import Data.Array.Accelerate.Data.Maybe ( fromMaybe )
 
 import Data.Array.Accelerate.LLVM.Native
 
-import Data.Array.Accelerate.Bench
+import Bench
 
 
 cocktailBench :: Benchmark
@@ -23,7 +19,7 @@ cocktailBench = env setupInput $ \input -> bgroup "cocktail-sort"
   , env (setupCocktail 8) $ \f -> bench "unroll=8" $ nf f input
   ]
   where
-    inputSize       = 2 P.^ 16
+    inputSize       = 2 P.^ (16 :: Int)
     setupInput      = P.return $ runN (generate (I1 inputSize) (\(I1 i) -> inputSize - i - 1))
     setupCocktail n = P.return $ runN (cocktailSort n)
 
@@ -43,8 +39,8 @@ cocktailStepLR :: forall a. (Ord a) => Acc (Vector a) -> Acc (Vector a)
 cocktailStepLR = cocktailStepR . cocktailStepL
 
 
-cocktailStepRL :: forall a. (Ord a) => Acc (Vector a) -> Acc (Vector a)
-cocktailStepRL = cocktailStepL . cocktailStepR
+-- cocktailStepRL :: forall a. (Ord a) => Acc (Vector a) -> Acc (Vector a)
+-- cocktailStepRL = cocktailStepL . cocktailStepR
 
 
 -- | Perform left-to-right sorting step, i.e. accumulate maximum value.
