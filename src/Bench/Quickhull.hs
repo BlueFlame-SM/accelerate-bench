@@ -26,7 +26,7 @@ quickhullBench = bgroup "quickhull"
 
 
 quickhullBench' :: Input -> Benchmark
-quickhullBench' (name, input) = bgroup name
+quickhullBench' ~(name, input) = bgroup name
   [ env (return $ CPU.runN quickhull1) $ \f -> bench "flat"  $ nf f input
   , env (return $ CPU.runN quickhull2) $ \f -> bench "split" $ nf f input
   , env (return $ recursive 2)         $ \f -> bench "rec-2" $ nf f input
