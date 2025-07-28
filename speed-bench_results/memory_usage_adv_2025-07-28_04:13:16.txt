@@ -1,0 +1,157 @@
+benchmarking cocktail-sort/unroll=1
+time                 4.869 s    (4.839 s .. 4.898 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 4.898 s    (4.884 s .. 4.912 s)
+std dev              16.82 ms   (13.18 ms .. 19.55 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=2
+time                 4.223 s    (4.214 s .. 4.230 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 4.271 s    (4.249 s .. 4.298 s)
+std dev              30.24 ms   (3.195 ms .. 38.73 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=4
+time                 3.921 s    (3.864 s .. 3.957 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.959 s    (3.940 s .. 3.972 s)
+std dev              18.51 ms   (5.958 ms .. 25.01 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=8
+time                 3.761 s    (NaN s .. 3.820 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.803 s    (3.782 s .. 3.814 s)
+std dev              23.75 ms   (20.52 ms .. 25.12 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=256, iter=4
+time                 3.705 s    (3.694 s .. 3.729 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.722 s    (3.713 s .. 3.729 s)
+std dev              8.719 ms   (5.750 ms .. 10.12 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=256, iter=20
+time                 18.06 s    (18.04 s .. 18.09 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 18.06 s    (18.06 s .. 18.07 s)
+std dev              6.374 ms   (2.855 ms .. 8.102 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=512, iter=20
+time                 202.6 s    (202.3 s .. 202.7 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 202.7 s    (202.6 s .. 202.8 s)
+std dev              106.8 ms   (2.830 ms .. 136.9 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=1000, t=3600
+time                 1.831 s    (NaN s .. 1.848 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 1.859 s    (1.847 s .. 1.883 s)
+std dev              23.69 ms   (1.378 ms .. 28.39 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=10000, t=600
+time                 30.25 s    (30.19 s .. 30.28 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 30.23 s    (30.21 s .. 30.24 s)
+std dev              21.27 ms   (3.136 ms .. 27.87 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=100000, t=10
+time                 51.57 s    (51.51 s .. 51.60 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 51.52 s    (51.50 s .. 51.54 s)
+std dev              23.24 ms   (10.75 ms .. 29.65 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+Loading 25M_rectangle
+benchmarking quickhull/25M_rectangle/flat
+time                 538.3 ms   (521.7 ms .. 561.8 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 541.8 ms   (538.6 ms .. 547.4 ms)
+std dev              5.387 ms   (953.1 μs .. 6.972 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking quickhull/25M_rectangle/split
+time                 359.2 ms   (336.0 ms .. 390.6 ms)
+                     0.999 R²   (0.997 R² .. 1.000 R²)
+mean                 344.2 ms   (335.7 ms .. 350.6 ms)
+std dev              10.09 ms   (7.732 ms .. 12.13 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking quickhull/25M_rectangle/rec-2
+time                 299.1 ms   (268.5 ms .. 319.3 ms)
+                     0.996 R²   (0.990 R² .. 1.000 R²)
+mean                 286.6 ms   (270.2 ms .. 296.9 ms)
+std dev              17.06 ms   (5.748 ms .. 24.72 ms)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking quickhull/25M_rectangle/rec-5
+time                 294.8 ms   (287.2 ms .. 307.8 ms)
+                     0.999 R²   (0.994 R² .. 1.000 R²)
+mean                 288.6 ms   (284.3 ms .. 293.9 ms)
+std dev              5.773 ms   (3.085 ms .. 8.722 ms)
+variance introduced by outliers: 16% (moderately inflated)
+
+Loading 25M_circle
+benchmarking quickhull/25M_circle/flat
+time                 582.8 ms   (567.8 ms .. NaN s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 585.8 ms   (582.9 ms .. 588.2 ms)
+std dev              3.438 ms   (2.882 ms .. 3.962 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking quickhull/25M_circle/split
+time                 373.0 ms   (357.2 ms .. 402.0 ms)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 367.5 ms   (364.0 ms .. 371.3 ms)
+std dev              4.042 ms   (1.521 ms .. 5.589 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking quickhull/25M_circle/rec-2
+time                 316.3 ms   (306.7 ms .. 329.3 ms)
+                     0.999 R²   (0.997 R² .. 1.000 R²)
+mean                 317.3 ms   (313.3 ms .. 321.0 ms)
+std dev              4.845 ms   (2.772 ms .. 6.444 ms)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking quickhull/25M_circle/rec-5
+time                 314.6 ms   (306.1 ms .. 332.3 ms)
+                     0.999 R²   (0.994 R² .. 1.000 R²)
+mean                 315.3 ms   (312.1 ms .. 319.7 ms)
+std dev              4.551 ms   (3.331 ms .. 5.901 ms)
+variance introduced by outliers: 16% (moderately inflated)
+
+Loading 25M_quadratic
+benchmarking quickhull/25M_quadratic/flat
+time                 4.873 s    (4.845 s .. 4.921 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 4.879 s    (4.870 s .. 4.891 s)
+std dev              11.80 ms   (4.582 ms .. 15.58 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking quickhull/25M_quadratic/split
+time                 3.927 s    (3.900 s .. 3.944 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.940 s    (3.933 s .. 3.944 s)
+std dev              6.475 ms   (1.617 ms .. 8.056 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking quickhull/25M_quadratic/rec-2
+time                 3.833 s    (NaN s .. 3.959 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.840 s    (3.806 s .. 3.867 s)
+std dev              34.51 ms   (15.78 ms .. 45.89 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking quickhull/25M_quadratic/rec-5
+time                 3.268 s    (3.178 s .. 3.321 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.308 s    (3.281 s .. 3.356 s)
+std dev              46.55 ms   (3.327 ms .. 57.31 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
