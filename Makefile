@@ -1,6 +1,7 @@
 .PHONY: all
 
 all: input/25M_circle.dat input/25M_rectangle.dat input/25M_quadratic.dat
+	cd input && md5sum -c MD5SUMS
 
 gen_points: gen_points.c
 	cc -o gen_points gen_points.c -O -Wall -Wextra -fsanitize=undefined
