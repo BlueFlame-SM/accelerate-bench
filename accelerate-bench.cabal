@@ -31,6 +31,7 @@ flag memory-bench
 library
   exposed-modules:
       Bench
+      Bench.Buddha
       Bench.Cocktail
       Bench.Flipping
       Bench.MG
