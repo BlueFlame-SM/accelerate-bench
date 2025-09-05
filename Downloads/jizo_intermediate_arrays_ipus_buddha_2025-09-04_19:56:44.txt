@@ -1,0 +1,21 @@
+benchmarking buddhabrot/n=100000
+time                 1.012 s    (971.5 ms .. NaN s)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 1.002 s    (994.2 ms .. 1.010 s)
+std dev              9.974 ms   (3.897 ms .. 13.07 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking buddhabrot/n=500000
+time                 2.989 s    (2.891 s .. 3.056 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.985 s    (2.968 s .. 3.001 s)
+std dev              20.43 ms   (10.19 ms .. 25.61 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking buddhabrot/n=1000000
+time                 5.872 s    (5.473 s .. 6.166 s)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 5.876 s    (5.841 s .. 5.936 s)
+std dev              58.06 ms   (1.285 ms .. 70.52 ms)
+variance introduced by outliers: 19% (moderately inflated)
+

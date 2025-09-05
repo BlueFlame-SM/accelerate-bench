@@ -1,0 +1,15 @@
+benchmarking buddhabrot/n=100000:
+Total memory allocated:   39349810298 bytes
+Initial memory allocated: 8 bytes
+Maximum memory allocated: 467994816 bytes
+
+benchmarking buddhabrot/n=500000:
+Total memory allocated:   60822122074 bytes
+Initial memory allocated: 16588808 bytes
+Maximum memory allocated: 681440832 bytes
+
+benchmarking buddhabrot/n=1000000:
+Total memory allocated:   87625403786 bytes
+Initial memory allocated: 16588808 bytes
+Maximum memory allocated: 947879424 bytes
+

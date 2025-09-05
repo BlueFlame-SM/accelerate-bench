@@ -1,0 +1,51 @@
+benchmarking cocktail-sort/unroll=1:
+Total memory allocated:   34359771137 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking cocktail-sort/unroll=2:
+Total memory allocated:   17179885569 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking cocktail-sort/unroll=4:
+Total memory allocated:   8589942785 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking cocktail-sort/unroll=8:
+Total memory allocated:   4294971393 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking mg/n=256, iter=4:
+Total memory allocated:   3336268312 bytes
+Initial memory allocated: 0 bytes
+Maximum memory allocated: 726213648 bytes
+
+benchmarking mg/n=256, iter=20:
+Total memory allocated:   15473381904 bytes
+Initial memory allocated: 134217728 bytes
+Maximum memory allocated: 726213640 bytes
+
+benchmarking mg/n=512, iter=20:
+Total memory allocated:   124860830232 bytes
+Initial memory allocated: 0 bytes
+Maximum memory allocated: 9644502152 bytes
+
+benchmarking nbody/n=1000, t=3600:
+Total memory allocated:   144056024 bytes
+Initial memory allocated: 0 bytes
+Maximum memory allocated: 176024 bytes
+
+benchmarking nbody/n=10000, t=600:
+Total memory allocated:   240560016 bytes
+Initial memory allocated: 48008 bytes
+Maximum memory allocated: 1808024 bytes
+
+benchmarking nbody/n=100000, t=10:
+Total memory allocated:   45600016 bytes
+Initial memory allocated: 480008 bytes
+Maximum memory allocated: 18080024 bytes
+
+Loading 25M_rectangle

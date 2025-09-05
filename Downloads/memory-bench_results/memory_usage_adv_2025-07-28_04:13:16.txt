@@ -1,0 +1,113 @@
+benchmarking cocktail-sort/unroll=1:
+Total memory allocated:   34359771137 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking cocktail-sort/unroll=2:
+Total memory allocated:   17179885569 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking cocktail-sort/unroll=4:
+Total memory allocated:   8589942785 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking cocktail-sort/unroll=8:
+Total memory allocated:   4294971393 bytes
+Initial memory allocated: 524288 bytes
+Maximum memory allocated: 2097152 bytes
+
+benchmarking mg/n=256, iter=4:
+Total memory allocated:   3336268312 bytes
+Initial memory allocated: 0 bytes
+Maximum memory allocated: 687865864 bytes
+
+benchmarking mg/n=256, iter=20:
+Total memory allocated:   15473381904 bytes
+Initial memory allocated: 134217728 bytes
+Maximum memory allocated: 687865856 bytes
+
+benchmarking mg/n=512, iter=20:
+Total memory allocated:   124860830232 bytes
+Initial memory allocated: 0 bytes
+Maximum memory allocated: 5502926848 bytes
+
+benchmarking nbody/n=1000, t=3600:
+Total memory allocated:   144056024 bytes
+Initial memory allocated: 0 bytes
+Maximum memory allocated: 176024 bytes
+
+benchmarking nbody/n=10000, t=600:
+Total memory allocated:   240560016 bytes
+Initial memory allocated: 48008 bytes
+Maximum memory allocated: 1808024 bytes
+
+benchmarking nbody/n=100000, t=10:
+Total memory allocated:   45600016 bytes
+Initial memory allocated: 480008 bytes
+Maximum memory allocated: 18080024 bytes
+
+Loading 25M_rectangle
+benchmarking quickhull/25M_rectangle/flat:
+Total memory allocated:   1920289946 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 1919801572 bytes
+
+benchmarking quickhull/25M_rectangle/split:
+Total memory allocated:   2295290092 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 2199999984 bytes
+
+benchmarking quickhull/25M_rectangle/rec-2:
+Total memory allocated:   2579757720 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 2000000096 bytes
+
+benchmarking quickhull/25M_rectangle/rec-5:
+Total memory allocated:   2579851482 bytes
+Initial memory allocated: 484242736 bytes
+Maximum memory allocated: 2344752216 bytes
+
+Loading 25M_circle
+benchmarking quickhull/25M_circle/flat:
+Total memory allocated:   1996590693 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 1825033885 bytes
+
+benchmarking quickhull/25M_circle/split:
+Total memory allocated:   2371608855 bytes
+Initial memory allocated: 400016912 bytes
+Maximum memory allocated: 2200016896 bytes
+
+benchmarking quickhull/25M_circle/rec-2:
+Total memory allocated:   2636825639 bytes
+Initial memory allocated: 400016912 bytes
+Maximum memory allocated: 2000017008 bytes
+
+benchmarking quickhull/25M_circle/rec-5:
+Total memory allocated:   2668677439 bytes
+Initial memory allocated: 1005977472 bytes
+Maximum memory allocated: 2605977568 bytes
+
+Loading 25M_quadratic
+benchmarking quickhull/25M_quadratic/flat:
+Total memory allocated:   16094408646 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 2450000066 bytes
+
+benchmarking quickhull/25M_quadratic/split:
+Total memory allocated:   16475129848 bytes
+Initial memory allocated: 405721232 bytes
+Maximum memory allocated: 2450000098 bytes
+
+benchmarking quickhull/25M_quadratic/rec-2:
+Total memory allocated:   16836576168 bytes
+Initial memory allocated: 405721232 bytes
+Maximum memory allocated: 2805721280 bytes
+
+benchmarking quickhull/25M_quadratic/rec-5:
+Total memory allocated:   17378770339 bytes
+Initial memory allocated: 422884992 bytes
+Maximum memory allocated: 2121639016 bytes
+

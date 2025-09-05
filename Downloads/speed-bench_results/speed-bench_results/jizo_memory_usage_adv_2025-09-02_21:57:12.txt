@@ -1,0 +1,71 @@
+benchmarking cocktail-sort/unroll=1
+time                 9.922 s    (9.860 s .. 9.989 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 9.891 s    (9.872 s .. 9.908 s)
+std dev              19.65 ms   (14.62 ms .. 23.00 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=2
+time                 7.043 s    (6.838 s .. 7.201 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 7.029 s    (7.004 s .. 7.064 s)
+std dev              34.71 ms   (273.0 μs .. 46.10 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=4
+time                 5.466 s    (5.313 s .. 5.582 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 5.471 s    (5.457 s .. 5.493 s)
+std dev              21.50 ms   (3.736 ms .. 27.41 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=8
+time                 4.585 s    (4.575 s .. 4.596 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 4.585 s    (4.583 s .. 4.588 s)
+std dev              3.039 ms   (1.388 ms .. 4.222 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=256, iter=4
+time                 632.8 ms   (605.0 ms .. NaN s)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 658.2 ms   (646.3 ms .. 680.1 ms)
+std dev              21.25 ms   (1.312 ms .. 25.85 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=256, iter=20
+time                 3.053 s    (3.042 s .. 3.061 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.041 s    (3.036 s .. 3.046 s)
+std dev              5.985 ms   (2.850 ms .. 7.789 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=512, iter=20
+time                 51.08 s    (50.86 s .. 51.28 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 50.94 s    (50.79 s .. 51.02 s)
+std dev              144.0 ms   (5.880 ms .. 179.7 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=1000, t=3600
+time                 901.4 ms   (749.6 ms .. 1.076 s)
+                     0.996 R²   (0.984 R² .. 1.000 R²)
+mean                 1.042 s    (971.7 ms .. 1.097 s)
+std dev              77.62 ms   (62.57 ms .. 86.94 ms)
+variance introduced by outliers: 21% (moderately inflated)
+
+benchmarking nbody/n=10000, t=600
+time                 7.144 s    (7.134 s .. 7.150 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 7.151 s    (7.147 s .. 7.153 s)
+std dev              3.264 ms   (1.950 ms .. 4.615 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=100000, t=10
+time                 11.80 s    (11.74 s .. 11.87 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 11.77 s    (11.75 s .. 11.78 s)
+std dev              20.43 ms   (10.88 ms .. 27.91 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+Loading 25M_rectangle

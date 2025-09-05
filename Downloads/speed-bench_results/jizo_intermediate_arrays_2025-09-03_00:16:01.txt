@@ -1,0 +1,63 @@
+Loading 25M_rectangle
+benchmarking quickhull/25M_rectangle/flat:
+Total memory allocated:   1920289946 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 1919801572 bytes
+
+benchmarking quickhull/25M_rectangle/split:
+Total memory allocated:   2295290092 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 2199999984 bytes
+
+benchmarking quickhull/25M_rectangle/rec-2:
+Total memory allocated:   2579757720 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 2000000096 bytes
+
+benchmarking quickhull/25M_rectangle/rec-5:
+Total memory allocated:   2579851482 bytes
+Initial memory allocated: 993263424 bytes
+Maximum memory allocated: 2993263520 bytes
+
+Loading 25M_circle
+benchmarking quickhull/25M_circle/flat:
+Total memory allocated:   1996590693 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 1825033885 bytes
+
+benchmarking quickhull/25M_circle/split:
+Total memory allocated:   2371608855 bytes
+Initial memory allocated: 400042542 bytes
+Maximum memory allocated: 2200016896 bytes
+
+benchmarking quickhull/25M_circle/rec-2:
+Total memory allocated:   2636825639 bytes
+Initial memory allocated: 400033824 bytes
+Maximum memory allocated: 2193288064 bytes
+
+benchmarking quickhull/25M_circle/rec-5:
+Total memory allocated:   2668677439 bytes
+Initial memory allocated: 1005977472 bytes
+Maximum memory allocated: 3005977568 bytes
+
+Loading 25M_quadratic
+benchmarking quickhull/25M_quadratic/flat:
+Total memory allocated:   16094408646 bytes
+Initial memory allocated: 400000000 bytes
+Maximum memory allocated: 2450000066 bytes
+
+benchmarking quickhull/25M_quadratic/split:
+Total memory allocated:   16475129848 bytes
+Initial memory allocated: 405721232 bytes
+Maximum memory allocated: 2455721304 bytes
+
+benchmarking quickhull/25M_quadratic/rec-2:
+Total memory allocated:   16836576168 bytes
+Initial memory allocated: 405721232 bytes
+Maximum memory allocated: 2805721280 bytes
+
+benchmarking quickhull/25M_quadratic/rec-5:
+Total memory allocated:   17378770339 bytes
+Initial memory allocated: 422884992 bytes
+Maximum memory allocated: 2822885040 bytes
+
