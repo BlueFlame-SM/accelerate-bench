@@ -1,0 +1,107 @@
+benchmarking buddhabrot/n=100000
+time                 4.755 s    (4.707 s .. 4.821 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 4.792 s    (4.773 s .. 4.803 s)
+std dev              19.07 ms   (7.054 ms .. 25.34 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking buddhabrot/n=500000
+time                 6.902 s    (6.838 s .. 6.955 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 6.872 s    (6.859 s .. 6.887 s)
+std dev              16.19 ms   (7.799 ms .. 22.72 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking buddhabrot/n=1000000
+time                 9.640 s    (9.495 s .. 9.707 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 9.635 s    (9.605 s .. 9.657 s)
+std dev              29.65 ms   (12.72 ms .. 39.63 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=1
+time                 12.58 s    (12.31 s .. 13.09 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 12.37 s    (12.30 s .. 12.48 s)
+std dev              108.1 ms   (4.112 ms .. 132.3 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=2
+time                 10.21 s    (9.692 s .. 10.76 s)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 10.30 s    (10.22 s .. 10.43 s)
+std dev              129.7 ms   (3.039 ms .. 156.8 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=4
+time                 9.088 s    (8.761 s .. 9.561 s)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 9.138 s    (9.042 s .. 9.233 s)
+std dev              121.3 ms   (50.75 ms .. 159.9 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking cocktail-sort/unroll=8
+time                 8.703 s    (8.571 s .. 8.995 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 8.626 s    (8.595 s .. 8.675 s)
+std dev              46.58 ms   (2.508 ms .. 58.18 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=256, iter=4
+time                 640.9 ms   (634.4 ms .. 645.8 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 644.3 ms   (642.5 ms .. 645.2 ms)
+std dev              1.650 ms   (167.6 μs .. 2.097 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=256, iter=20
+time                 3.034 s    (3.033 s .. 3.035 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.035 s    (3.035 s .. 3.036 s)
+std dev              682.1 μs   (266.8 μs .. 937.8 μs)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking mg/n=512, iter=20
+time                 51.15 s    (50.99 s .. 51.45 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 51.11 s    (51.07 s .. 51.14 s)
+std dev              40.84 ms   (19.42 ms .. 55.18 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=1000, t=3600
+time                 547.8 ms   (NaN s .. 548.3 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 545.6 ms   (543.4 ms .. 546.4 ms)
+std dev              1.519 ms   (211.3 μs .. 1.943 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=10000, t=600
+time                 7.069 s    (7.042 s .. 7.086 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 7.083 s    (7.076 s .. 7.088 s)
+std dev              7.558 ms   (496.6 μs .. 10.65 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking nbody/n=100000, t=10
+time                 11.77 s    (11.75 s .. 11.79 s)
+                     1.000 R²   (1.000 R² .. NaN R²)
+mean                 11.74 s    (11.73 s .. 11.75 s)
+std dev              15.64 ms   (6.669 ms .. 21.04 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+Loading 25M_rectangle
+benchmarking quickhull/25M_rectangle/flat
+time                 291.9 ms   (290.9 ms .. 293.1 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 291.4 ms   (291.1 ms .. 291.7 ms)
+std dev              398.0 μs   (218.9 μs .. 547.8 μs)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking quickhull/25M_rectangle/split
+time                 239.0 ms   (236.8 ms .. 245.0 ms)
+                     1.000 R²   (0.998 R² .. 1.000 R²)
+mean                 238.4 ms   (237.5 ms .. 239.9 ms)
+std dev              1.626 ms   (94.73 μs .. 2.095 ms)
+variance introduced by outliers: 16% (moderately inflated)
+
+AccILPSolverError: cbc: ClpPrimalColumnSteepest.cpp:727: virtual int ClpPrimalColumnSteepest::pivotColumn(CoinIndexedVector*, CoinIndexedVector*, CoinIndexedVector*, CoinIndexedVector*, CoinIndexedVector*): Assertion `model_->reducedCost(bestSequence) < 0.0' failed.
